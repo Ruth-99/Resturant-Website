@@ -20,7 +20,6 @@ h1{
     
     background-color: #e0bf02;
     height: 250px;
-    align-items: center;
     width: 96%;
     border-radius: 10px;
     text-align: center;
@@ -39,9 +38,8 @@ h1{
     width: 120px;
     font-size: 15px;
     border: 1px solid black;
-  border-radius: 6px;
-  border-color: none;
-}
+  border-radius: 6px;}
+
 .btn:hover{
     background-color: #740A03;
     color:#e0bf02;
@@ -51,8 +49,7 @@ h1{
 .second{
     background-color: white;
      border-radius: 10px;
-    margin:20px;
-    margin-left: 30px;
+     margin: 20px auto;
     padding: 50px;
     width: 96%;
     padding-top: 60px;
@@ -62,15 +59,15 @@ h1{
 
 
 .center{
-    margin-left:300px;
+    display: block;
+    margin: 0 auto;
     border-radius: 20px;
 }
 
 .third{
     background-color: white;
      border-radius: 10px;
-    margin:20px;
-    margin-left: 30px;
+    margin: 20px auto;
     padding: 50px;
     width: 96%;
     padding-top: 60px;
@@ -90,11 +87,109 @@ h1{
 .middle{
     justify-content: center;
     align-items: center;
-    margin-left:450px;
+        display: block;
+    margin: 0 auto;
+
 }
 
 hr{
     height: 3px;
     background-color:  #e0bf02;
     border:  #e0bf02;;
+}
+
+/* TABLETS */
+@media (max-width: 1024px){
+   
+    .second,
+    .third{
+        width: 95%;
+        padding: 40px;
+    }
+
+    h1{
+        font-size: 24px;
+        height: auto;
+        padding: 25px;
+    }
+}
+
+/* MOBILE DEVICES */
+@media (max-width: 768px){
+    
+
+    .second,
+    .third{
+        padding: 30px 20px;
+    }
+
+    .btn{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .center{
+        width: 100%;
+        height: auto;
+    }
+
+    .middle{
+        width: 100%;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px){
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+   
+
+    .second,
+    .third{
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE FIX FOR .first */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px){
+    .first{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .first{
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;              /* prevents overflow on small screens */
+        padding: 40px 20px;       /* better spacing on mobile */
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px){
+    .first{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 30px 15px;
+        font-size: 14px;          /* keeps text readable */
+    }
 }
